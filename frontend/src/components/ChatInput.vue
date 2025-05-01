@@ -23,12 +23,24 @@ function send() {
         density="compact"
         rounded
         variant="outlined"
+        class="custom-text-field"
       />
     </v-col>
     <v-col cols="2">
-      <v-btn color="black" block @click="send">
-        Enviar
+      <v-btn icon @click="send">
+        <v-icon>mdi-send</v-icon>
       </v-btn>
     </v-col>
   </v-row>
 </template>
+
+<style>
+.custom-text-field input {
+  background-color: #303030 !important;
+  color: white !important;
+  border-radius: 9999px !important;
+  padding: 10px 14px;
+  height: 100%;
+  box-sizing: border-box;
+}
+</style>

@@ -15,7 +15,7 @@ defineProps({
       class="pa-2"
       :class="msg.from === 'bot' ? 'text-left' : 'text-right'"
     >
-      <v-card :class="msg.from === 'bot' ? 'pa-2 bg-grey-lighten-3' : 'pa-2 bg-black text-white'">
+      <v-card class="pa-2 bg-grey-lighten-3">
         <div class="mx-2">{{ msg.text }}</div>
       </v-card>
     </div>

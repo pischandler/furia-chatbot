@@ -1,29 +1,26 @@
 <script setup lang="ts">
+import logoFuria from '@/assets/header/logo-furia-palavra.png'
+import '@/assets/header/style.css'
+
 defineEmits(['toggle-menu'])
 </script>
 
 <template>
-  <v-app-bar
-    app
-    color="#323A4C"
-    dark
-    height="100"
-    class="elevation-2"
-    style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px"
-  >
+  <v-app-bar app dark height="100" class="furia-header elevation-2">
     <v-btn icon @click="$emit('toggle-menu')">
       <v-icon>mdi-menu</v-icon>
     </v-btn>
 
     <v-toolbar-title class="d-flex align-center">
       <v-img
-        src="https://furiagg.fbitsstatic.net/sf/img/logo-furia.svg?theme=main&v=202503171541"
+        :src="logoFuria"
         alt="Logo FURIA"
-        max-height="50"
+        max-height="80"
+        max-width="200"
         contain
-        class="me-3"
+        class="me-2"
       />
-      Chatbot
+      <span class="chatbot-text">Chatbot</span>
     </v-toolbar-title>
   </v-app-bar>
 </template>
