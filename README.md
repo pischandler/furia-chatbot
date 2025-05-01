@@ -6,8 +6,6 @@ A conversational chatbot for FURIA CS:GO fans, providing team information, upcom
 - Vue.js
 - Vuetify
 - NestJS
-- TypeORM
-- PostgreSQL
 
 ## Features
 - Quick answers about team roster, next matches, and latest news
