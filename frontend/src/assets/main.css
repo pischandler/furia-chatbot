@@ -1,11 +1,27 @@
 @import './base.css';
 
+html, body, #app {
+  height: 100%;
+  margin: 0;
+}
+
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
-  background: transparent;
+  width: 100%;  
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+}
+
+.v-app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.v-main {
+  flex: 1;  
+  min-height: 100vh;  
+  background-color: #212121;
 }
 
 a,
@@ -29,8 +45,8 @@ a,
   }
 
   #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row; /* Sidebar + Conteúdo */
     padding: 0 2rem;
   }
 }
