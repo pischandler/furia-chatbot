@@ -1,0 +1,17 @@
+.furia-header {
+  background-image: url('./header.png') !important;
+  background-size: cover;
+  background-position: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color:aliceblue !important;
+}
+
+.chatbot-text {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  font-family: 'Arial Black', sans-serif;
+}
