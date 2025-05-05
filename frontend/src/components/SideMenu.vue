@@ -4,7 +4,6 @@ import furiaLogo from '@/assets/furia_logo.png'
 
 const props = defineProps<{
   modelValue: boolean
-  shortcuts: string[]
 }>()
 
 const emit = defineEmits<{
@@ -24,34 +23,40 @@ watch(
     internalDrawer.value = val
   },
 )
+
+const menuItems = [
+  { label: 'Perfil', value: 'perfil' },
+  { label: 'FURIA Store', value: 'store' },
+  { label: 'Campeonatos', value: 'campeonatos' },
+  { label: 'Modalidades', value: 'modalidades' },
+  { label: 'Histórico', value: 'historico' },
+]
 </script>
 
 <template>
   <v-navigation-drawer v-model="internalDrawer" app class="drawer-fix" color="transparent">
     <v-list>
-      <!-- Substitua o título "Atalhos" pelo logo da FURIA -->
       <v-list-item>
         <v-img :src="furiaLogo" alt="Logo FURIA" contain max-width="90px" class="ma-4" />
       </v-list-item>
 
-      <v-list-item
-        v-for="item in shortcuts"
-        :key="item"
-        @click="$emit('shortcut', item)"
-        class="pe-2"
-      >
-        {{ item }}
+      <v-list-item v-for="item in menuItems" :key="item.value" class="pe-2">
+        {{ item.label }}
       </v-list-item>
     </v-list>
   </v-navigation-drawer>
 </template>
 
 <style scoped>
-/* Sobrescrevendo fundo do menu lateral */
 .drawer-fix {
   --v-theme-surface: #171717 !important;
   background-color: #171717 !important;
   color: white;
+}
+
+.v-list-item:hover {
+  background-color: #2a2a2a !important;
+  cursor: pointer;
 }
 
 .drawer-fix .v-navigation-drawer__content,
