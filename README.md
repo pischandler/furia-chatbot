@@ -1,16 +1,33 @@
 # FURIA Fans Chatbot
 
-A conversational chatbot for FURIA CS:GO fans, providing team information, upcoming matches, player stats, and more.
+A conversational chatbot built for **FURIA CS:GO fans**, offering quick and interactive access to team information, upcoming matches, player stats, and more.
 
-## Technologies
-- Vue.js
-- Vuetify
-- NestJS
+## 🚀 Technologies
 
-## Features
-- Quick answers about team roster, next matches, and latest news
-- Simple backend with pre-defined responses
-- Friendly UI simulating an intelligent chatbot
+- **Vue.js 3**  
+- **Vuetify 3**  
+- **NestJS** (for backend logic and mock responses)
 
-## How to run
-Coming soon...
+## ✨ Features
+
+- 🔎 Quick answers about FURIA's roster, upcoming matches, and recent news  
+- 💬 Friendly UI simulating a smart, conversational chatbot experience  
+- 🧠 Simple backend with pre-defined response logic for rapid prototyping  
+- 📱 Responsive interface built with Vuetify
+
+## ▶️ How to Run the Project
+
+Follow these steps to run the project locally:
+
+```bash
+# 1. Clone the repository
+git clone <repository-url>
+
+# 2. Navigate to the frontend folder
+cd frontend
+
+# 3. Install the dependencies
+npm install
+
+# 4. Start the development server
+npm run dev
