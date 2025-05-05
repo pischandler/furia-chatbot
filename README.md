@@ -6,7 +6,6 @@ A conversational chatbot built for **FURIA CS:GO fans**, offering quick and inte
 
 - **Vue.js 3**  
 - **Vuetify 3**  
-- **NestJS** (for backend logic and mock responses)
 
 ## ✨ Features
 
